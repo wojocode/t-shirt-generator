@@ -1,4 +1,3 @@
-
 from fpdf import FPDF, Align
 import sys
 
@@ -13,8 +12,8 @@ def get_path():
     path = input("output name: ").strip()
     if not path:
             sys.exit("empty path")
-    if len(text) > 20:
-            sys.exit("text is too long (max 20 characters)")
+    if len(text) > 25:
+            sys.exit("text is too long (max 25 characters)")
     else:
         return path
     
