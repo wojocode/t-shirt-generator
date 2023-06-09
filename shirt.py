@@ -39,7 +39,7 @@ size = get_font_size()
 
 class PDF(FPDF):
     def header(self):
-        pdf.image("T-shirt.png",w = 190, x = Align.C)
+        pdf.image("assets/T-shirt.png",w = 190, x = Align.C)
         pdf.set_font("helvetica",style='',size= size)
         pdf.set_text_color(255,255,255)
         pdf.cell(txt= text,h= -270, w = 0, align= 'C')
